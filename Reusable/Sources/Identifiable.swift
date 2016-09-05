@@ -16,6 +16,10 @@ public protocol Identifiable {
 public extension Identifiable {
     
     static var identifier: String {
-        return String(describing: self)
+        #if swift(>=3.0)
+            return String(describing: self)
+        #else
+            return String(self)
+        #endif
     }
 }

@@ -10,6 +10,7 @@ import Foundation
 
 public extension UIStoryboard {
     
+    #if swift(>=3.0)
     func instantiate<T: UIViewController>(for type: T.Type = T.self) -> T where T: Identifiable {
         guard let viewController = instantiateViewController(withIdentifier: T.identifier) as? T else {
             fatalError("The viewController '\(T.identifier)' of '\(self)' is not of class '\(self)'")
@@ -17,5 +18,15 @@ public extension UIStoryboard {
         
         return viewController
     }
+    
+    #else
+    func instantiate<T: UIViewController where T: Identifiable>(for type: T.Type = T.self) -> T {
+        guard let viewController = instantiateViewControllerWithIdentifier(T.identifier) as? T else {
+            fatalError("The viewController '\(T.identifier)' of '\(self)' is not of class '\(self)'")
+        }
+        
+        return viewController
+    }
+    #endif
     
 }

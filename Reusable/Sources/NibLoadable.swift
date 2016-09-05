@@ -17,17 +17,29 @@ public protocol NibLoadable: class {
 public extension NibLoadable {
     
     static var nib: UINib {
-        return UINib(nibName: String(describing: self), bundle: Bundle(for: self))
+        #if swift(>=3.0)
+            return UINib(nibName: String(describing: self), bundle: Bundle(for: self))
+        #else
+            return UINib(nibName: String(self), bundle: NSBundle(forClass: self))
+        #endif
     }
 }
 
 public extension NibLoadable where Self: UIView {
     
     static func viewFromNib() -> Self {
-        
-        guard let view = nib.instantiate(withOwner: nil, options: nil).first as? Self else {
+        #if swift(>=3.0)
+            
+            guard let view = nib.instantiate(withOwner: nil, options: nil).first as? Self else {
             fatalError("The nib \(nib) expected its root view to be of type \(self)")
-        }
+            }
+            
+        #else
+            guard let view = nib.instantiateWithOwner(nil, options: nil).first as? Self else {
+                fatalError("The nib \(nib) expected its root view to be of type \(self)")
+            }
+            
+        #endif
         
         return view
     }
