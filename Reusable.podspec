@@ -6,14 +6,15 @@ Pod::Spec.new do |spec|
   spec.authors      = { 'Kevin Chen' => 'xmkevinchen@gmail.com' }
   spec.summary      = 'A Swift type safer resuable view, such as UITableViewCell, UICollectionViewCell, UIViewController, without downcasting'
   spec.source       = {
-                        :git => 'https://github.com/xmkevinchen/Reusable.git',                        
+                        :git => 'https://github.com/xmkevinchen/Reusable.git',
                         :tag => spec.version.to_s
                       }
 
   spec.platform              = :ios
   spec.ios.deployment_target = '8.0'
 
-  spec.source_files   = 'Reusable/Sources/**/*.swift'
+  spec.source_files   = 'Reusable/Sources/**/*.swift', 'Reusable/Reusable.h'
+  spec.public_header_files = 'Reusable/Reusable.h'
   spec.ios.framework  = 'UIKit'
 
 end
