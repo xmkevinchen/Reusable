@@ -16,5 +16,6 @@ Pod::Spec.new do |spec|
   spec.source_files   = 'Reusable/Sources/**/*.swift', 'Reusable/Reusable.h'
   spec.public_header_files = 'Reusable/Reusable.h'
   spec.ios.framework  = 'UIKit'
+  spec.module_name = 'Reusable'
 
 end
