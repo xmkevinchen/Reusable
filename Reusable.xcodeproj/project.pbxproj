@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0A5797B11D7D37410061DBAE /* Reusable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A5797AF1D7D37410061DBAE /* Reusable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A5797BF1D7D378B0061DBAE /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5797B81D7D378B0061DBAE /* Identifiable.swift */; };
 		0A5797C01D7D378B0061DBAE /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5797B91D7D378B0061DBAE /* NibLoadable.swift */; };
 		0A5797C11D7D378B0061DBAE /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5797BA1D7D378B0061DBAE /* NibOwnerLoadable.swift */; };
 		0A5797C21D7D378B0061DBAE /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5797BB1D7D378B0061DBAE /* Reusable.swift */; };
 		0A5797C31D7D378B0061DBAE /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5797BC1D7D378B0061DBAE /* UICollectionView+Reusable.swift */; };
-		0A5797C41D7D378B0061DBAE /* UIStoryboard+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5797BD1D7D378B0061DBAE /* UIStoryboard+Identifier.swift */; };
+		0A5797C41D7D378B0061DBAE /* UIStoryboard+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5797BD1D7D378B0061DBAE /* UIStoryboard+Reusable.swift */; };
 		0A5797C51D7D378B0061DBAE /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5797BE1D7D378B0061DBAE /* UITableView+Reusable.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +20,11 @@
 		0A5797AC1D7D37410061DBAE /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5797AF1D7D37410061DBAE /* Reusable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reusable.h; sourceTree = "<group>"; };
 		0A5797B01D7D37410061DBAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A5797B81D7D378B0061DBAE /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		0A5797B91D7D378B0061DBAE /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		0A5797BA1D7D378B0061DBAE /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		0A5797BB1D7D378B0061DBAE /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		0A5797BC1D7D378B0061DBAE /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
-		0A5797BD1D7D378B0061DBAE /* UIStoryboard+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Identifier.swift"; sourceTree = "<group>"; };
+		0A5797BD1D7D378B0061DBAE /* UIStoryboard+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Reusable.swift"; sourceTree = "<group>"; };
 		0A5797BE1D7D378B0061DBAE /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,12 +68,11 @@
 		0A5797B71D7D378B0061DBAE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				0A5797B81D7D378B0061DBAE /* Identifiable.swift */,
+				0A5797BB1D7D378B0061DBAE /* Reusable.swift */,
 				0A5797B91D7D378B0061DBAE /* NibLoadable.swift */,
 				0A5797BA1D7D378B0061DBAE /* NibOwnerLoadable.swift */,
-				0A5797BB1D7D378B0061DBAE /* Reusable.swift */,
 				0A5797BC1D7D378B0061DBAE /* UICollectionView+Reusable.swift */,
-				0A5797BD1D7D378B0061DBAE /* UIStoryboard+Identifier.swift */,
+				0A5797BD1D7D378B0061DBAE /* UIStoryboard+Reusable.swift */,
 				0A5797BE1D7D378B0061DBAE /* UITableView+Reusable.swift */,
 			);
 			path = Sources;
@@ -162,10 +159,9 @@
 			files = (
 				0A5797C21D7D378B0061DBAE /* Reusable.swift in Sources */,
 				0A5797C31D7D378B0061DBAE /* UICollectionView+Reusable.swift in Sources */,
-				0A5797BF1D7D378B0061DBAE /* Identifiable.swift in Sources */,
 				0A5797C11D7D378B0061DBAE /* NibOwnerLoadable.swift in Sources */,
 				0A5797C01D7D378B0061DBAE /* NibLoadable.swift in Sources */,
-				0A5797C41D7D378B0061DBAE /* UIStoryboard+Identifier.swift in Sources */,
+				0A5797C41D7D378B0061DBAE /* UIStoryboard+Reusable.swift in Sources */,
 				0A5797C51D7D378B0061DBAE /* UITableView+Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +323,7 @@
 				0A5797B61D7D37410061DBAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
